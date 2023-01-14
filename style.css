@@ -223,15 +223,17 @@ position: absolute;
     padding: 30px;
     border-radius: 10px;
     animation-name: card;
-    animation-duration: 10s;
+    animation-duration: 30s;
     background-color: #ff900e;
     color: white;
 }
 @keyframes card {
   from {background-color:#ff900e;
-padding: 30px;}
+padding: 30px;
+border-radius: 10px;}
   to {background-color: rgb(74, 74, 4);
-padding: 50px;}
+padding: 50px;
+border-radius: 50%;}
 }
 .card-value{
     color: #131313;
@@ -305,7 +307,7 @@ footer{
     text-align: center;
     padding: 50px;
     background-color: #ff8f0ee2;
-    margin: 100px;
+    margin:20px 100px;
     color: white;
     font-weight: bold;
     border-radius: 10px;
