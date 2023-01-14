@@ -19,6 +19,7 @@ body {
   background: #ff900e;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 /* universal style end */
 /* header section style start */
@@ -97,7 +98,8 @@ body {
   padding-top: 10px;
   display: flex;
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
+  padding-bottom: 20px;
 }
 .feature-img {
   padding-left: 100px;
@@ -108,7 +110,7 @@ body {
 }
 .feature-img p img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 .feature-info {
@@ -130,6 +132,112 @@ body {
   color: #ff900e;
   font-weight: 700;
 }
+/* main Experience section start */
+.experiences{
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+}
+.experiences-info{
+    width: 50%;
+
+}
+.ex-title{
+    color: #131313;
+    font-size: 30px;
+    padding-left: 10px;
+    
+    border-left: 3px solid #ff900e;
+}
+.ex-discription{
+    padding: 10px 0 20px 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+.ex-details{
+    padding: 20px;
+    margin-top: 2px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.ex-details h3{
+    padding: 10px;
+    color: #131313;
+}
+.ex-details p{
+     color: #727272;
+      font-size: 16px;
+}
+.ex-image{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.ex-image img{
+    
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    z-index: -1;
+}
+.button-special{
+position: absolute;
+    z-index: 1;
+    display: block;
+   /* margin-left: auto; */
+   margin-right: auto;
+   margin-top: -50px;
+   padding: 15px;
+   font-size: 30px;
+   background-color: #ff900e;
+   border: none;
+   border-radius: 10px;
+   color: #ffffff;
+   cursor: pointer;
+}
+.some-facts{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+.fact-info h2{
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+.fact-info p{
+    padding-bottom: 30px;
+    color: #727272;
+}
+.fact-card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    border: 1px solid #ff900e;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    animation-name: card;
+    animation-duration: 10s;
+    background-color: #ff900e;
+    color: white;
+}
+@keyframes card {
+  from {background-color:#ff900e;
+padding: 30px;}
+  to {background-color: rgb(74, 74, 4);
+padding: 50px;}
+}
+.card-value{
+    color: #131313;
+    color: white;
+    font-weight: bold;
+}
+
 
 @media only screen and (max-width: 600px) {
   .header {
@@ -183,4 +291,29 @@ body {
     padding-top: 0px;
     padding-bottom: 20px;
   }
+  .experiences{
+    flex-direction: column-reverse;
+    padding: 0 10px;
+  }
+  .ex-image{
+    width: 100%;
+    margin-top: -70px;
+    padding-bottom: 30px;
+    
+  }
+  .experiences-info {
+    padding-top: 50px;
+    width: 100%;
+}
+.some-facts{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.fact-card{
+    flex-direction: column;
+    
+}
+.card{
+    margin-bottom: 10px;
+}
 }
