@@ -156,6 +156,7 @@ body {
     color: #727272;
 }
 .ex-details{
+    /* width: 90%; */
     padding: 20px;
     margin-top: 2px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
@@ -237,6 +238,80 @@ padding: 50px;}
     color: white;
     font-weight: bold;
 }
+/* our sponspors */
+.sponspors{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.sponspors h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.sponspors p{
+    font-weight: 16px;
+    color: #727272;
+    padding-bottom: 20px;
+}
+.sponspors p img{
+    color: #727272;
+    mix-blend-mode: luminosity;
+    padding: 30px;
+}
+/* project-planning section */
+.project-planning{
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.project-planning h1{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.project{
+    display: flex;
+    
+}
+.project-img{
+  width: 50%;  
+}
+.project-img img{
+    width: 90%;
+    padding-right: 30px;
+    
+}
+.project-discription{
+    padding-top: 50px;
+    width: 50%;
+    padding-left: 30px;
+    text-align: start;
+}
+.project-discription h2{
+    font-size: 30px;
+    padding: 20px;
+}
+.project-discription p{
+    padding-left: 20px;
+    width: 500px;
+    font-size: 20px;
+    color: #727272;
+    padding-bottom: 30px;
+    /* border: 1px solid; */
+}
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #ff8f0ee2;
+    margin: 100px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -249,11 +324,11 @@ padding: 50px;}
   }
   .h-menu ul li {
     padding-top: 20px;
-
+  
     padding-bottom: 10px;
   }
   .h-menu ul li a {
-    text-align: center;
+    text-align: center; font-size: 17px;
   }
   /* .nav{
     height: 80vh;
@@ -315,5 +390,36 @@ padding: 50px;}
 }
 .card{
     margin-bottom: 10px;
+}
+.sponspors{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.project-planning{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.project-planning h1{
+    font-size: 25px;
+}
+.project{
+    flex-direction: column;
+}
+.project-img{
+    width: 100%;
+   
+}
+.project-img img{
+    padding-right: 0px;
+    width: 100%;
+}
+.project-discription{
+    width: 100%;
+    text-align: center;
+}
+.project-discription p{
+    width: 90%;
+    font-size: 16px;
+    padding-left: 0px;
 }
 }
